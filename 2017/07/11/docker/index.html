@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="">
+<html class="theme-next muse use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="docker 容器是linux支持的 容器的隔离 chroot：隔离分区cgroup：隔离资源（CPU、内存）netns：隔离网络namespaceipc docker安装前提 3.0以后版本的内核12[root@master ~]# uname -r3.10.0-229.el7.x86_64 实验环境    docker节点 机器域名     控制节点 master.pod0.example.c">
+<meta name="description" content="title: docker的基础配置date: 2017-07-11 09:48:00 docker 容器是linux支持的 容器的隔离 chroot：隔离分区cgroup：隔离资源（CPU、内存）netns：隔离网络namespaceipc docker安装前提 3.0以后版本的内核12[root@master ~]# uname -r3.10.0-229.el7.x86_64 实验环境">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="张棋的博客">
 <meta property="og:url" content="http://yoursite.com/2017/07/11/docker/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="docker 容器是linux支持的 容器的隔离 chroot：隔离分区cgroup：隔离资源（CPU、内存）netns：隔离网络namespaceipc docker安装前提 3.0以后版本的内核12[root@master ~]# uname -r3.10.0-229.el7.x86_64 实验环境    docker节点 机器域名     控制节点 master.pod0.example.c">
-<meta property="og:updated_time" content="2017-06-15T06:10:42.000Z">
+<meta property="og:site_name" content="张棋的博客">
+<meta property="og:description" content="title: docker的基础配置date: 2017-07-11 09:48:00 docker 容器是linux支持的 容器的隔离 chroot：隔离分区cgroup：隔离资源（CPU、内存）netns：隔离网络namespaceipc docker安装前提 3.0以后版本的内核12[root@master ~]# uname -r3.10.0-229.el7.x86_64 实验环境">
+<meta property="og:updated_time" content="2017-07-11T09:48:54.390Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="docker 容器是linux支持的 容器的隔离 chroot：隔离分区cgroup：隔离资源（CPU、内存）netns：隔离网络namespaceipc docker安装前提 3.0以后版本的内核12[root@master ~]# uname -r3.10.0-229.el7.x86_64 实验环境    docker节点 机器域名     控制节点 master.pod0.example.c">
+<meta name="twitter:title" content="张棋的博客">
+<meta name="twitter:description" content="title: docker的基础配置date: 2017-07-11 09:48:00 docker 容器是linux支持的 容器的隔离 chroot：隔离分区cgroup：隔离资源（CPU、内存）netns：隔离网络namespaceipc docker安装前提 3.0以后版本的内核12[root@master ~]# uname -r3.10.0-229.el7.x86_64 实验环境">
 
 
 
@@ -136,7 +136,7 @@
 
 
 
-  <title> | Hexo</title>
+  <title> | 张棋的博客</title>
   
 
 
@@ -154,7 +154,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -172,7 +172,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">张棋的博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -202,7 +202,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -212,7 +212,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -258,13 +258,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/11/docker/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="zhangqi">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="张棋的博客">
     </span>
 
     
@@ -282,9 +282,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-11T07:59:22+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-11T17:48:54+08:00">
                 2017-07-11
               </time>
             
@@ -319,7 +319,9 @@
       
 
       
-        <h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><hr>
+        <hr>
+<p>title: docker的基础配置<br>date: 2017-07-11 09:48:00</p>
+<h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><hr>
 <p>容器是linux支持的</p>
 <p>容器的隔离</p>
 <p><code>chroot</code>：隔离分区<br><code>cgroup</code>：隔离资源（CPU、内存）<br><code>netns</code>：隔离网络<br>namespace<br>ipc</p>
@@ -457,10 +459,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -469,10 +471,10 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
-               alt="John Doe" />
-          <p class="site-author-name" itemprop="name">John Doe</p>
+               alt="zhangqi" />
+          <p class="site-author-name" itemprop="name">zhangqi</p>
            
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">blog</p>
           
         </div>
         <nav class="site-state motion-element">
@@ -481,7 +483,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
                 <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -546,12 +548,12 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">zhangqi</span>
 </div>
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
