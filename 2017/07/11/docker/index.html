@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -104,25 +104,23 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
 
 
 
 
 
 
-<meta name="description" content="docker的安装配置  容器是linux支持的 容器的隔离 chroot：隔离分区cgroup：隔离资源（CPU、内存）netns：隔离网络namespaceipc docker安装前提 3.0以后版本的内核12[root@master ~]# uname -r3.10.0-229.el7.x86_64 实验环境    docker节点 机器域名     控制节点 master.pod0.exa">
+<meta name="description" content="zhangqi   docker的安装配置    容器是linux支持的 容器的隔离 chroot：隔离分区cgroup：隔离资源（CPU、内存）netns：隔离网络namespaceipc docker安装前提 3.0以后版本的内核12[root@master ~]# uname -r3.10.0-229.el7.x86_64 实验环境    docker节点 机器域名     控制节点 mas">
 <meta property="og:type" content="article">
 <meta property="og:title" content="docker的安装配置">
 <meta property="og:url" content="https://git-zhangqi.github.io/2017/07/11/docker/index.html">
 <meta property="og:site_name" content="zhangqi - blog">
-<meta property="og:description" content="docker的安装配置  容器是linux支持的 容器的隔离 chroot：隔离分区cgroup：隔离资源（CPU、内存）netns：隔离网络namespaceipc docker安装前提 3.0以后版本的内核12[root@master ~]# uname -r3.10.0-229.el7.x86_64 实验环境    docker节点 机器域名     控制节点 master.pod0.exa">
-<meta property="og:image" content="https://git-zhangqi.github.io/images/docker.jpg">
-<meta property="og:updated_time" content="2017-07-11T16:04:06.799Z">
+<meta property="og:description" content="zhangqi   docker的安装配置    容器是linux支持的 容器的隔离 chroot：隔离分区cgroup：隔离资源（CPU、内存）netns：隔离网络namespaceipc docker安装前提 3.0以后版本的内核12[root@master ~]# uname -r3.10.0-229.el7.x86_64 实验环境    docker节点 机器域名     控制节点 mas">
+<meta property="og:updated_time" content="2017-07-11T16:23:48.281Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker的安装配置">
-<meta name="twitter:description" content="docker的安装配置  容器是linux支持的 容器的隔离 chroot：隔离分区cgroup：隔离资源（CPU、内存）netns：隔离网络namespaceipc docker安装前提 3.0以后版本的内核12[root@master ~]# uname -r3.10.0-229.el7.x86_64 实验环境    docker节点 机器域名     控制节点 master.pod0.exa">
-<meta name="twitter:image" content="https://git-zhangqi.github.io/images/docker.jpg">
+<meta name="twitter:description" content="zhangqi   docker的安装配置    容器是linux支持的 容器的隔离 chroot：隔离分区cgroup：隔离资源（CPU、内存）netns：隔离网络namespaceipc docker安装前提 3.0以后版本的内核12[root@master ~]# uname -r3.10.0-229.el7.x86_64 实验环境    docker节点 机器域名     控制节点 mas">
 
 
 
@@ -130,13 +128,13 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Muse',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     motion: true,
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -222,17 +220,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
+            Startseite
           </a>
         </li>
       
@@ -242,7 +230,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archiv
           </a>
         </li>
       
@@ -252,27 +240,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
-            
-            站点地图
+            Tags
           </a>
         </li>
       
@@ -332,9 +300,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-11T13:05:20+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-11T13:05:20+08:00">
                 2017-07-11
               </time>
             
@@ -363,6 +331,17 @@
 
           
           
+             <span id="/2017/07/11/docker/" class="leancloud_visitors" data-flag-title="docker的安装配置">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -380,7 +359,10 @@
       
 
       
-        <p><blockquote class="blockquote-center">docker的安装配置</blockquote><br><img src="/images/docker.jpg" class="full-image"></p>
+        <blockquote class="blockquote-center"><p>zhangqi </p>
+</blockquote>
+<div class="note default"><p>docker的安装配置 </p>
+</div>
 <hr>
 <p>容器是linux支持的</p>
 <p>容器的隔离</p>
@@ -557,7 +539,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
                 <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">日志</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -636,13 +618,13 @@
 
 
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主题 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Muse
   </a>
 </div>
 
@@ -789,6 +771,113 @@
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("jLhs5kKy3pNuBaogCHd6l9fk-gzGzoHsz", "ISTYdgFEbXFDpmRMLGYJSg9A");AV.useAVCloudUS();</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
